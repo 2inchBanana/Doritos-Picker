@@ -6,7 +6,7 @@
 }
 
 .container {
-  display: flex;
+ display: flex;
   justify-content: center;
 }
 
@@ -199,7 +199,7 @@ nav li {
 
 #service {
   margin: 20px 40px;
-  padding: 10px 0;
+  padding: 50px 0;
 }
 
 #service .column{
@@ -210,14 +210,14 @@ nav li {
 
 #service .title {
     font-size: 60px;
-    margin: 50px 0 0 0;
+    margin-bottom: 30px;
 }
 
 .service-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 50px;
+    margin: 0 50px;
 }
 
 .service-list .wrapper {
@@ -316,7 +316,7 @@ nav li {
 }
 
 .right-side .img-wrapper {
-  margin: 40px;
+  margin-left: 40px;
 }
 
 .right-side .img-wrapper img{
@@ -343,7 +343,7 @@ nav li {
 
 #pricing .title {
   font-size: 60px;
-  margin: 60px 0 50px;
+  margin: 40px 0 40px;
 }
 
 #pricing .info {
@@ -403,6 +403,8 @@ nav li {
 }
 
 #pricing .info {
+  width: 100%;
+  max-width: 600px;
   margin: 10px;
 }
 
@@ -412,9 +414,145 @@ nav li {
   margin: 0 0 40px 0;
 }
 
+/* TESTIMONIALS */
+
+#testimonials {
+  margin: 50px 0 20px 0;
+}
+
+#testimonials .column{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#testimonials .title {
+  font-size: 60px;
+  margin: 50px 0 30px 0;
+}
+
+#testimonials .info {
+  font-size: 20px;
+  color: rgb(100, 100, 100);
+  line-height: 1.5;
+  margin: 0 0 50px 0;
+}
+
+.testimonial-list {
+  display: flex;
+  width: 100%;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  margin: 20px;
+}
+
+.testimonial-list .img-wrapper img{
+  width: 100%;
+  max-width: 100px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px 1px;
+}
+
+.testimonial-wrapper .name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.testimonial-wrapper .testimonial {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* FAQS */
+
+#faqs {
+  margin: 0px 0 100px 0;
+}
+
+#faqs .container {
+  width: 100%;
+  background-color: white;
+}
+
+#faqs .column {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#faqs .title {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 50px 0 30px 0;
+}
+
+.question-list {
+display: flex;
+flex-flow: column;
+justify-content: space-between;
+}
+
+.question-wrapper {
+  background-color: rgb(244, 244, 244);
+  border-radius: 10px;
+  margin: 20px 0;
+  max-width: 800px;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; 
+}
+
+.bar .img-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 40px;
+  max-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center; 
+  margin: 10px 20px;
+}
+
+.arrow-img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+.arrow-img:hover {
+  transform: rotate(360deg);
+  transition: all 300ms;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 30px;
+}
+
+.answer {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 10px 30px 20px;
+}
+
 /* FOOTER */
+
 footer {
-  background-color: rgb(255, 236, 226);
+  background-color: rgb(255, 146, 87);
   margin: 50px 0 0;
   width: 100%;
 }
@@ -423,9 +561,21 @@ footer .column {
   width: 100%;
   max-width: 1200px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 100px;
+  flex-flow: column;
+  margin: 50px;
+}
+
+.footer-list {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .column h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .col {
@@ -435,7 +585,41 @@ footer .column {
 }
 
 .col a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
   text-decoration: none;
 }
 
+.end {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 0 0;
+}
 
+.end .logo {
+  color: rgb(255, 146, 87);
+}
+
+.logo-wrapper {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.logo-wrapper .logo {
+  background-color: white;
+  width: 44px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 0 10px 0 0;
+}
+
+.end .logo-title {
+  color: white;
+}
+
+.incorp h3 {
+  color: white;
+}
